@@ -23,7 +23,7 @@
    ```bash
    javac -cp ".:/usr/lib/swi-prolog/lib/jpl.jar" Main.java
 
-##KB PL
+## KB PL
 % --- Definición de cursos ---
 curso(matematicas1).
 curso(matematicas2).
@@ -55,7 +55,7 @@ aprobar(Alumno, Curso) :-
     curso(Curso),
     assertz(aprobado(Alumno, Curso)).
 
-##MAIN JAVA
+## MAIN JAVA
 import org.jpl7.*;
 
 public class Main {
@@ -78,7 +78,7 @@ public class Main {
     }
 }
 
-##INDEX HTML
+## INDEX HTML
 <!DOCTYPE html>
 <html>
 <head>
