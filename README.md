@@ -7,7 +7,7 @@ El sistema está hecho con **HTML**, **JavaScript** y la librería **Tau-Prolog*
 
 ---
 
-## 🧩 Requisitos
+## Requisitos
 
 No es necesario instalar programas complicados.  
 Solo necesitas:
@@ -17,7 +17,7 @@ Solo necesitas:
 
 ---
 
-## 💾 Descarga del proyecto
+## Descarga del proyecto
 
 1. Descarga este repositorio o carpeta del proyecto.
 2. Asegúrate de tener el archivo principal llamado:
@@ -25,14 +25,14 @@ Solo necesitas:
 
 ---
 
-## ⚙️ Instalación
+## Instalación
 
 No requiere instalación.  
 Solo asegúrate de que todos los archivos estén en la misma carpeta (por ejemplo, en el escritorio o en tu carpeta de proyectos).
 
 ---
 
-## ▶️ Ejecución del código
+## Ejecución del código
 
 1. Da doble clic en el archivo **index.html**.  
 2. Se abrirá en tu navegador por defecto.
@@ -43,11 +43,11 @@ Solo asegúrate de que todos los archivos estén en la misma carpeta (por ejempl
 
 ---
 
-## 📄 Estructura del proyecto
+##  Estructura del proyecto
 
 ---
 
-## 🧠 ¿Cómo funciona?
+##  ¿Cómo funciona?
 
 El proyecto usa **Tau-Prolog**, una librería que ejecuta código Prolog en el navegador.  
 En el archivo `index.html` se declara una **base de conocimiento** con:
@@ -60,9 +60,9 @@ Cuando haces clic en *Consultar*, el sistema busca los cursos que el alumno **pu
 
 ---
 
-## 👨‍💻 Autor
+## ALUMNO
 
-Proyecto realizado por **[ISRAEL ALEJANDRO MARTINEZ GAYOSO]**  
-Para fines educativos – curso de *Inteligencia Artificial / Programación Lógica*.
+**JOSE FERNANDO ARCOVEDO LEON**  
+ curso de PROGRAMACION AVANZADA SALA 215
 
 
