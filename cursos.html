@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inscripción de Cursos Universitarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Sistema de Inscripción de Cursos</h1>
+            <p class="subtitle">Planifica tu semestre de manera inteligente</p>
+        </header>
+
+        <div class="control-panel">
+            <div class="card">
+                <h2>👤 Información del Estudiante</h2>
+                <div class="form-group">
+                    <label for="alumno">Seleccione un alumno:</label>
+                    <select id="alumno" class="form-select">
+                        <option value="ana">Ana García</option>
+                        <option value="juan">Juan Martínez</option>
+                        <option value="luis">Luis Rodríguez</option>
+                        <option value="maria">María López</option>
+                        <option value="pedro">Pedro Hernández</option>
+                        <option value="angel">Ángel Silva</option>
+                    </select>
+                </div>
+                <button class="btn-primary" onclick="consultarCursos()">
+                    📚 Ver Cursos Disponibles
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>⚙️ Opciones Avanzadas</h2>
+                <button class="btn-secondary" onclick="verProgresoAcademico()">
+                    📊 Ver Progreso Académico
+                </button>
+                <button class="btn-secondary" onclick="generarPlanEstudio()">
+                    🎯 Generar Plan de Estudio
+                </button>
+                <button class="btn-secondary" onclick="reiniciarSistema()">
+                    🔄 Reiniciar Sistema
+                </button>
+            </div>
+        </div>
+
+        <div class="results-container">
+            <div class="card">
+                <h2>✅ Cursos Disponibles para Inscribir</h2>
+                <div class="cursos-lista">
+                    <form id="formCursos">
+                        <div id="disponibles" class="cursos-grid"></div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-success" onclick="confirmarSeleccion()">
+                                🚀 Confirmar Inscripción
+                            </button>
+                            <div class="creditos-info">
+                                <span id="totalCreditos">Total créditos: 0</span>
+                                <span id="limiteCreditos">Límite: 20 créditos</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🚫 Cursos Bloqueados</h2>
+                <div class="bloqueados-container">
+                    <div class="bloqueado-section">
+                        <h3>📋 Por Prerrequisitos Faltantes:</h3>
+                        <div id="bloqueados" class="bloqueados-lista"></div>
+                    </div>
+                    <div class="bloqueado-section">
+                        <h3>🔄 Por Haber Sido Aprobados:</h3>
+                        <div id="repetidos" class="bloqueados-lista"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📝 Selección Final</h2>
+                <div id="seleccion_final" class="seleccion-final">
+                    <p class="placeholder">Aquí aparecerán los cursos seleccionados</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📈 Resumen Académico</h2>
+                <div id="resumen_academico" class="resumen-academico">
+                    <div class="estadisticas">
+                        <div class="estadistica">
+                            <span class="numero" id="totalCursos">0</span>
+                            <span class="label">Total Cursos</span>
+                        </div>
+                        <div class="estadistica">
+                            <span class="numero" id="cursosAprobados">0</span>
+                            <span class="label">Aprobados</span>
+                        </div>
+                        <div class="estadistica">
+                            <span class="numero" id="cursosDisponibles">0</span>
+                            <span class="label">Disponibles</span>
+                        </div>
+                        <div class="estadistica">
+                            <span class="numero" id="porcentajeAvance">0%</span>
+                            <span class="label">Avance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cargar Tau-Prolog primero -->
+    <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.3/modules/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tau-prolog@0.3.3/modules/lists.js"></script>
+    
+    <!-- Luego nuestra aplicación -->
+    <script src="prolog.js"></script>
+</body>
+</html>
